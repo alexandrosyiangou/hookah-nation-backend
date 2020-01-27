@@ -7,6 +7,7 @@ exports.up = async function(knex) {
     table.string('brand', 30).notNullable()
     table.string('category', 30).notNullable()
     table.string('sub_category', 30)
+    table.string('taste', 20)
     table.string('flavours', 100)
   })
 };
