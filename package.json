@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "knex": "./node_modules/.bin/knex --knexfile ./knex/knexfile.js"
+    "knex-dev": "NODE_ENV=development ./node_modules/.bin/knex --knexfile ./knex/knexfile.js",
+    "knex-prod": "NODE_ENV=production ./node_modules/.bin/knex --knexfile ./knex/knexfile.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "knex": "^0.20.8",
+    "lodash": "^4.17.15",
     "pg": "^7.17.1"
   }
 }

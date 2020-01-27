@@ -25,7 +25,7 @@ module.exports = {
       password: 'f92ad2590f112aa317d332876afc58846a78d011735d82dec3ba630105f17ba6',
     },
     migrations: {
-      directory: './knex/migrations',
+      directory: './migrations',
       tableName: 'knex_migrations'
     }
   }
