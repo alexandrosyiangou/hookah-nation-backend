@@ -11,6 +11,8 @@ const port = process.env.PORT || 3000
 process.on('uncaughtException', (e) => console.error('Process Unhandled Error', e))
 process.on('unhandledRejection', (e) => console.error('Process Unhandled Rejection', e))
 
+app.use(morgan('common'))
+
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => res.send('Hello World!'))
