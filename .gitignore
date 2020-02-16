@@ -1,1 +1,5 @@
+# NodeJS related
 /node_modules
+
+# VSCode related
+/.vscode
